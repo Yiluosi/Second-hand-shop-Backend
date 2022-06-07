@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3307/shopbase?serverTimezone=GMT
+      username: root
+      password: root
+
+server:
+  port: 8085
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: D:\SpringProject\shop1\file\
